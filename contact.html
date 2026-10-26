@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3D2270">
   <meta name="description" content="Book a complimentary 1-hour Google Meet consult with Traveling Doula NCS / Cjaisey Williams.">
   <title>Contact — Traveling Doula NCS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo-link" href="index.html">
-        <img src="assets/logo.png" width="48" height="48" alt="">
+        <img src="assets/logo.png" width="52" height="52" alt="">
         <span class="logo-text">
           <strong>Traveling Doula NCS</strong>
           <span>Cjaisey Williams</span>
@@ -37,7 +38,7 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" tabindex="-1">
     <header class="page-hero">
       <div class="container">
         <h1>Book a free consult</h1>
@@ -61,7 +62,7 @@
             <dt>Traveling from</dt>
             <dd>Los Angeles · SF Bay Area · Denver · South Florida — plus nationwide and international travel.</dd>
           </dl>
-          <p style="margin:1.5rem 0 0">
+          <p class="stack-top">
             <a class="btn btn-secondary" href="services.html">Review services first</a>
           </p>
         </aside>
@@ -72,34 +73,36 @@
           </div>
 
           <form id="consult-form" action="#" method="post" novalidate>
+            <div id="form-errors" class="form-summary" role="alert" aria-atomic="true" tabindex="-1"></div>
+            <p class="form-required-note">Fields marked with <span class="req" aria-hidden="true">*</span><span class="sr-only">an asterisk</span> are required.</p>
             <div class="form-row two">
               <div class="field">
                 <label for="name">Full name <span class="req" aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
                 <input id="name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="name-error">
-                <p class="field-error" id="name-error" role="alert">Please enter your full name.</p>
+                <p class="field-error" id="name-error">Please enter your full name.</p>
               </div>
               <div class="field">
                 <label for="email">Email <span class="req" aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
-                <input id="email" name="email" type="email" autocomplete="email" required aria-required="true" aria-describedby="email-error">
-                <p class="field-error" id="email-error" role="alert">Please enter a valid email address.</p>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-required="true" aria-describedby="email-error">
+                <p class="field-error" id="email-error">Please enter a valid email address.</p>
               </div>
             </div>
 
             <div class="form-row two">
               <div class="field">
-                <label for="phone">Phone</label>
-                <input id="phone" name="phone" type="tel" autocomplete="tel">
+                <label for="phone">Phone <span class="optional">(optional)</span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
               </div>
               <div class="field">
                 <label for="location">Location (city / state or country) <span class="req" aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
-                <input id="location" name="location" type="text" required aria-required="true" aria-describedby="location-error" placeholder="e.g. Denver, CO">
-                <p class="field-error" id="location-error" role="alert">Please share your city / state or country.</p>
+                <input id="location" name="location" type="text" autocomplete="address-level2" required aria-required="true" aria-describedby="location-error" placeholder="e.g. Denver, CO">
+                <p class="field-error" id="location-error">Please share your city, state, or country.</p>
               </div>
             </div>
 
             <div class="form-row">
               <div class="field">
-                <label id="interest-label">Service interest <span class="hint">Select all that apply</span></label>
+                <p class="group-label" id="interest-label">Service interest <span class="hint">Optional. Select all that apply.</span></p>
                 <div class="checkbox-group" role="group" aria-labelledby="interest-label">
                   <label><input type="checkbox" name="interest" value="birth"> Birth doula</label>
                   <label><input type="checkbox" name="interest" value="postpartum"> Postpartum / NCS</label>
@@ -118,13 +121,13 @@
                 <label for="times">Preferred consult days &amp; times <span class="req" aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
                 <span class="hint" id="times-hint">Share a few options within M–F 8–10am / 5–7pm, or weekend availability.</span>
                 <textarea id="times" name="times" required aria-required="true" aria-describedby="times-hint times-error" placeholder="e.g. Tue/Thu after 5pm PT, or Sat morning"></textarea>
-                <p class="field-error" id="times-error" role="alert">Please share preferred days and times.</p>
+                <p class="field-error" id="times-error">Please share preferred days and times.</p>
               </div>
             </div>
 
             <div class="form-row">
               <div class="field">
-                <label for="message">Tell me a bit about your needs</label>
+                <label for="message">Tell me a bit about your needs <span class="optional">(optional)</span></label>
                 <span class="hint" id="message-hint">Due date, ages of children, live-in vs. live-out, travel plans, sliding-scale inquiry, etc.</span>
                 <textarea id="message" name="message" aria-describedby="message-hint"></textarea>
               </div>
@@ -151,10 +154,10 @@
           <div>
             <strong>Traveling Doula NCS</strong>
             <p>Expert doula and newborn care wherever you are.</p>
-            <p style="margin-top:0.75rem"><span class="demo-badge">DEMO SITE</span></p>
+            <p class="stack-top-sm"><span class="demo-badge">DEMO SITE</span></p>
           </div>
         </div>
-        <div class="footer-col">
+        <nav class="footer-col" aria-label="Footer">
           <h3>Explore</h3>
           <ul>
             <li><a href="services.html">Services</a></li>
@@ -163,7 +166,7 @@
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-        </div>
+        </nav>
         <div class="footer-col">
           <h3>Credentials</h3>
           <ul>

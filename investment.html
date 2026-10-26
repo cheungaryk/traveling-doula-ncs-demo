@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3D2270">
   <meta name="description" content="Clear pricing for Traveling Doula NCS packages, hourly ranges, combo credits, and how investment works.">
   <title>Investment — Traveling Doula NCS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo-link" href="index.html">
-        <img src="assets/logo.png" width="48" height="48" alt="">
+        <img src="assets/logo.png" width="52" height="52" alt="">
         <span class="logo-text">
           <strong>Traveling Doula NCS</strong>
           <span>Cjaisey Williams</span>
@@ -37,7 +38,7 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" tabindex="-1">
     <header class="page-hero">
       <div class="container">
         <h1>Investment</h1>
@@ -50,22 +51,23 @@
         <div class="cards cards-2 mb-2">
           <article class="package-card featured">
             <span class="badge">Birth</span>
-            <h2 style="font-family:var(--font-display);font-size:1.35rem;margin:0.25rem 0">Birth Foundation Package</h2>
+            <h2 class="card-title">Birth Foundation Package</h2>
             <p class="package-price">$2,500</p>
-            <p style="margin:0 0 1rem;color:var(--charcoal-muted)">Prenatal visits, 4-week on-call window, continuous labor support, backup doula, and one postpartum integration visit.</p>
+            <p class="muted mb-1">Prenatal visits, 4-week on-call window, continuous labor support, backup doula, and one postpartum integration visit.</p>
             <a href="services.html#birth">Full package details →</a>
           </article>
           <article class="package-card">
             <span class="badge">Combo</span>
-            <h2 style="font-family:var(--font-display);font-size:1.35rem;margin:0.25rem 0">Birth + Postpartum Combo</h2>
-            <p class="package-price" style="font-size:1.5rem">Custom <span>+ credits</span></p>
-            <p style="margin:0 0 1rem;color:var(--charcoal-muted)">$2,500 birth package + your tailored postpartum plan. Book together for a $250 or $1,000 credit.</p>
+            <h2 class="card-title">Birth + Postpartum Combo</h2>
+            <p class="package-price price-md">Custom <span>+ credits</span></p>
+            <p class="muted mb-1">$2,500 birth package + your tailored postpartum plan. Book together for a $250 or $1,000 credit.</p>
             <a href="services.html#combo">Combo incentives →</a>
           </article>
         </div>
 
-        <h2 style="font-family:var(--font-display);font-size:1.4rem;margin:0 0 1rem">Hourly care ranges</h2>
-        <div class="rate-table-wrap mb-2">
+        <h2 class="section-title">Hourly care ranges</h2>
+        <p class="table-scroll-hint">This table continues to the right. Swipe sideways, or select the table and scroll.</p>
+        <div class="rate-table-wrap mb-2" aria-label="Hourly investment ranges. Scroll horizontally to see every column.">
           <table class="rates">
             <caption class="sr-only">Hourly investment ranges by care type</caption>
             <thead>
@@ -103,8 +105,8 @@
           </table>
         </div>
 
-        <h2 style="font-family:var(--font-display);font-size:1.4rem;margin:2rem 0 1rem">Minimums at a glance</h2>
-        <ul class="list-clean" style="background:var(--white);border:1px solid var(--cream-dark);border-radius:var(--radius);padding:0.5rem 1.25rem">
+        <h2 class="section-title">Minimums at a glance</h2>
+        <ul class="list-clean panel">
           <li><span class="label">Local postpartum</span><span class="value">1 week minimum</span></li>
           <li><span class="label">Relocation / travel</span><span class="value">4 weeks minimum</span></li>
           <li><span class="label">Local day shifts</span><span class="value">4 hrs, 3+ days/week</span></li>
@@ -143,8 +145,8 @@
           <p>ROTA or select full-time live-in weekend NCS/nanny roles.</p>
         </div>
         <div class="package-card">
-          <p class="package-price" style="margin-bottom:0.5rem">$160k–$200k <span>annually + benefits</span></p>
-          <p style="margin:0;color:var(--charcoal-muted)">Commensurate with scope, discretion, travel demands, and collaboration within staffed households. Includes a comprehensive benefits package and discretionary annual performance raise.</p>
+          <p class="package-price">$160k–$200k <span>annually + benefits</span></p>
+          <p class="muted">Commensurate with scope, discretion, travel demands, and collaboration within staffed households. Includes a comprehensive benefits package and discretionary annual performance raise.</p>
         </div>
       </div>
     </section>
@@ -155,7 +157,7 @@
           <h2>Reimbursement note</h2>
         </div>
         <p class="prose">Employer-based reimbursement, insurance, or HSA/FSA/HRA programs apply to <strong>certified birth &amp; postpartum doula support only</strong>—not NCS. You remain fully responsible for fees; payment at signing is your non-refundable retainer regardless of reimbursement outcomes. Bring written benefit documentation to your consult if you plan to seek reimbursement.</p>
-        <p class="prose" style="margin-top:1rem">Dense contract rules (late payment, early termination, backups) are summarized on the <a href="services.html#contract-heading">Services page accordion</a> and detailed in your written agreement.</p>
+        <p class="prose stack-top">Dense contract rules (late payment, early termination, backups) are summarized on the <a href="services.html#contract-heading">Services page accordion</a> and detailed in your written agreement.</p>
       </div>
     </section>
 
@@ -176,10 +178,10 @@
           <div>
             <strong>Traveling Doula NCS</strong>
             <p>Expert doula and newborn care wherever you are.</p>
-            <p style="margin-top:0.75rem"><span class="demo-badge">DEMO SITE</span></p>
+            <p class="stack-top-sm"><span class="demo-badge">DEMO SITE</span></p>
           </div>
         </div>
-        <div class="footer-col">
+        <nav class="footer-col" aria-label="Footer">
           <h3>Explore</h3>
           <ul>
             <li><a href="services.html">Services</a></li>
@@ -188,7 +190,7 @@
             <li><a href="testimonials.html">Testimonials</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-        </div>
+        </nav>
         <div class="footer-col">
           <h3>Credentials</h3>
           <ul>
