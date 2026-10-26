@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Book a complimentary 1-hour Google Meet consult with Traveling Doula NCS / Cjaisey Williams.">
+  <title>Contact — Traveling Doula NCS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Rasa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo-link" href="index.html">
+        <img src="assets/logo.png" width="48" height="48" alt="">
+        <span class="logo-text">
+          <strong>Traveling Doula NCS</strong>
+          <span>Cjaisey Williams</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="investment.html">Investment</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-cta" aria-current="page">Book a consult</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <div class="container">
+        <h1>Book a free consult</h1>
+        <p>A complimentary 1-hour Google Meet to discuss your needs, preferences, and service options—and to see if we vibe.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container form-layout">
+        <aside class="contact-info">
+          <h2>Consultation hours</h2>
+          <dl>
+            <dt>Weekdays (U.S.)</dt>
+            <dd>Monday–Friday, 8:00–10:00am and 5:00–7:00pm</dd>
+            <dt>Weekends</dt>
+            <dd>By appointment</dd>
+            <dt>Response time</dt>
+            <dd>Same-day or next-day reply in most cases. Please check your spam folder if you don’t see a response.</dd>
+            <dt>What to expect</dt>
+            <dd>Please allow the full hour. We’ll talk through your needs, preferences, offerings, and mutual fit.</dd>
+            <dt>Traveling from</dt>
+            <dd>Los Angeles · SF Bay Area · Denver · South Florida — plus nationwide and international travel.</dd>
+          </dl>
+          <p style="margin:1.5rem 0 0">
+            <a class="btn btn-secondary" href="services.html">Review services first</a>
+          </p>
+        </aside>
+
+        <div class="form-card">
+          <div class="demo-notice" role="status">
+            <strong>Demo notice:</strong> This form does not send a message. On the live site it would reach Cjaisey. Use it here to preview the consult flow.
+          </div>
+
+          <form id="consult-form" action="#" method="post" novalidate>
+            <div class="form-row two">
+              <div class="field">
+                <label for="name">Full name <span class="req" aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                <input id="name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="name-error">
+                <p class="field-error" id="name-error" role="alert">Please enter your full name.</p>
+              </div>
+              <div class="field">
+                <label for="email">Email <span class="req" aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" required aria-required="true" aria-describedby="email-error">
+                <p class="field-error" id="email-error" role="alert">Please enter a valid email address.</p>
+              </div>
+            </div>
+
+            <div class="form-row two">
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+              <div class="field">
+                <label for="location">Location (city / state or country) <span class="req" aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                <input id="location" name="location" type="text" required aria-required="true" aria-describedby="location-error" placeholder="e.g. Denver, CO">
+                <p class="field-error" id="location-error" role="alert">Please share your city / state or country.</p>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label id="interest-label">Service interest <span class="hint">Select all that apply</span></label>
+                <div class="checkbox-group" role="group" aria-labelledby="interest-label">
+                  <label><input type="checkbox" name="interest" value="birth"> Birth doula</label>
+                  <label><input type="checkbox" name="interest" value="postpartum"> Postpartum / NCS</label>
+                  <label><input type="checkbox" name="interest" value="combo"> Birth + postpartum combo</label>
+                  <label><input type="checkbox" name="interest" value="travel"> Travel / relocation</label>
+                  <label><input type="checkbox" name="interest" value="longterm"> Long-term placement</label>
+                  <label><input type="checkbox" name="interest" value="backup"> Backup / flight nanny</label>
+                  <label><input type="checkbox" name="interest" value="mentorship"> Mentorship</label>
+                  <label><input type="checkbox" name="interest" value="other"> Other / specialized</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="times">Preferred consult days &amp; times <span class="req" aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                <span class="hint" id="times-hint">Share a few options within M–F 8–10am / 5–7pm, or weekend availability.</span>
+                <textarea id="times" name="times" required aria-required="true" aria-describedby="times-hint times-error" placeholder="e.g. Tue/Thu after 5pm PT, or Sat morning"></textarea>
+                <p class="field-error" id="times-error" role="alert">Please share preferred days and times.</p>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="message">Tell me a bit about your needs</label>
+                <span class="hint" id="message-hint">Due date, ages of children, live-in vs. live-out, travel plans, sliding-scale inquiry, etc.</span>
+                <textarea id="message" name="message" aria-describedby="message-hint"></textarea>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Request free consult</button>
+            </div>
+
+            <div id="form-success" class="form-success" tabindex="-1" role="status">
+              Thanks — in a live site, this would send your consult request. This demo form doesn’t submit.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.png" width="44" height="44" alt="">
+          <div>
+            <strong>Traveling Doula NCS</strong>
+            <p>Expert doula and newborn care wherever you are.</p>
+            <p style="margin-top:0.75rem"><span class="demo-badge">DEMO SITE</span></p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="investment.html">Investment</a></li>
+            <li><a href="about.html">About Cjaisey</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Credentials</h3>
+          <ul>
+            <li>DONA International</li>
+            <li>ProDoula</li>
+            <li>Doulas Association of Southern California</li>
+            <li>TrustLine Registered (2012)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© Traveling Doula NCS · Redesign demo for review</span>
+        <span>Home bases: Los Angeles · SF Bay · Denver · South Florida</span>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
